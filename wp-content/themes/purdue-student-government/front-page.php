@@ -171,7 +171,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="explore parallax-window" data-parallax="scroll" data-image-src="<?=get_template_directory_uri();?>/images/yellowfountain2.jpg">
+	<section class="explore">
 		<div class="container">
 			<div class="row">
 
@@ -311,7 +311,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="unite parallax-window" data-parallax="scroll" data-image-src="<?=get_template_directory_uri();?>/images/yellowarch2.jpg">
+	<section class="unite">
 		<div class="container">
 			<div class="row section-title">
 				<h2 class="white">Unite.</h2>
