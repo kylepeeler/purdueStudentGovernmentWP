@@ -27,6 +27,8 @@
 				<?php
 				the_content();
 
+				echo 'FAQ Hide/Show will go here';
+
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'purdue-student-government' ),
 					'after'  => '</div>',

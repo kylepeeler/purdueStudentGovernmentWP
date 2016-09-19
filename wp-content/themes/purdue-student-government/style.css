@@ -59,7 +59,12 @@ body
 }
 
 .content{
-	padding: 40px 0 40px 0;
+	padding: 40px;
+	font-family: "Montserrat Light", Arial, Sans-serif;
+}
+
+.content hr{
+	border-color: #141414;
 }
 
 footer{
