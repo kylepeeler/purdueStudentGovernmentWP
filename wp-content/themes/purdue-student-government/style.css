@@ -259,9 +259,14 @@ h2.widget-title {
 	background: #3b5998;
 }
 
-.social a .fa-google-plus:after
+.social a .fa-instagram:after
 {
-	background: #dd4b39;
+	background: #f56040;
+}
+
+.social a .fa-youtube:after
+{
+	background: #bb0000;
 }
 
 .social a .fa-twitter:after
@@ -282,4 +287,61 @@ h2.widget-title {
 .social a .fa-dribbble:after
 {
 	background: #EA4C89;
+}
+
+/*FAQ Section*/
+.faq-category {
+	font-weight: bold;
+	font-size: 28px;
+	text-align: center;
+	display: block;
+	margin-top: 15px;
+}
+
+.faq-question{
+	border-bottom: 2px solid #ccc;
+	margin: 0  5px 0 0;
+}
+
+.faq-chevron{
+	float: right;
+}
+
+.faq-heading{
+	padding: 5px 10px 5px 10px;
+}
+
+.faq-body{
+	padding: 5px 10px 5px 10px;
+}
+
+.faq-qtitle{
+	font-size: 20px;
+}
+
+
+
+.governing-documents{
+	display: inline-flex;
+}
+
+.governing-document {
+	border-radius: 50%;
+	background-color: #ECB550;
+	color: #FFF;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-bottom: 7px;
+	padding-right: 10px;
+	margin-right: 50px;
+	margin-left: 50px;
+	text-align: center;
+	width: 170px !important;
+	height: 170px !important;
+	margin-top: 6px;
+}
+
+.governing-document a{
+	color: white;
+	text-decoration: none;
 }

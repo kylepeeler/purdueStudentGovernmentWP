@@ -22,9 +22,14 @@ get_header(); ?>
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+
+				<div class="container-fluid page-header-img entry-header">
+					<div class="row">
+						<div class="section-title col-xs-12">
+							<?php single_post_title('<h1 class="entry-title">', '</h1>' ); ?>
+						</div>
+					</div>
+				</div>
 
 			<?php
 			endif;

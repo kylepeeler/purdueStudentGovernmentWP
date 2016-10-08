@@ -26,9 +26,30 @@
 			<div class="<?if ($showSidebar) { echo 'col-md-8'; } else { echo 'col-md-12'; } ;?>">
 				<?php
 				the_content();
-
-				echo 'FAQ Hide/Show will go here';
-
+				//check if we have a faq section to output
+				if (have_rows('faq_section')):
+					while (have_rows('faq_section')): the_row();?>
+					<span class="faq-category"><?php the_sub_field('category_name')?></span>
+						<?php
+						//check if we have any questions
+						if (have_rows('questions')){
+							while(have_rows('questions')): the_row();?>
+								<div class="faq-question panel panel-default">
+									<div class="panel-heading faq-heading">
+										<h4 class="panel-title faq-qtitle">Q: <?php the_sub_field('question')?>
+											<i class="faq-chevron fa fa-chevron-circle-down" aria-hidden="true"></i>
+										</h4>
+									</div>
+									<div class="panel-body faq-body">
+										A: <?php the_sub_field('answer')?>
+									</div>
+								</div>
+							<?php endwhile;
+						}
+						?>
+				<?php
+					endwhile;
+				endif;
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'purdue-student-government' ),
 					'after'  => '</div>',

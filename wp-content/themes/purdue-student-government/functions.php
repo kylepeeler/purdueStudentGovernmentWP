@@ -107,7 +107,7 @@ function purdue_student_government_scripts() {
 	wp_deregister_script('jquery');
 
 	//Load JQuery from CDN
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js', array(), null, true);
+	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), null, true);
 
 	//Load tether from CDN
 	wp_enqueue_script('tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js', array(), null, true);
